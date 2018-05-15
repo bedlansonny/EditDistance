@@ -11,7 +11,7 @@ public class EditDistance
     public static void main(String args[]) throws IOException
     {
         Scanner in = new Scanner(new File("input.txt"));
-        fileWriter = new PrintWriter(new File("output.csv"));
+        //fileWriter = new PrintWriter(new File("output.csv"));
 
         int c = in.nextInt();
         for(int ci = 0; ci < c; ci++)
@@ -19,10 +19,10 @@ public class EditDistance
             a = in.next();
             b = in.next();
             System.out.println(distance());
-            exportData();
+            //exportData();
             System.out.println(trace() + "\n");
         }
-        fileWriter.close();
+        //fileWriter.close();
     }
 
     static ArrayDeque<String> trace()
